@@ -3,7 +3,6 @@ import {
   SafeAreaView,
   StyleSheet,
   View,
-  StatusBar,
   Image,
   Dimensions,
 } from 'react-native';
@@ -13,40 +12,38 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import { Button, Text } from 'native-base';
 
-const App: FunctionComponent = () => {
-  return (
-    <>
-      <SafeAreaView>
-        <View style={styles.containerView}>
-          <View style={styles.titleContainer}>
-            <Text style={styles.title}>
-              InstaClone
-            </Text>
-          </View>
-          <View style={styles.imageContainer}>
-            <Image source={{ uri: 'https://picsum.photos/200' }} style={styles.profileImage} />
-          </View>
-          <View style={styles.loginBtnContainer}>
-            <Button block style={styles.loginBtn}>
-              <Text style={styles.loginBtnTxt}>Login As Amit Rai</Text>
-            </Button>
-          </View>
-          <View style={styles.removeViewContainer}>
-            <Text style={styles.removeTxt}>Remove</Text>
-          </View>
-          <View style={styles.footerContainer}>
-            <Button bordered block style={styles.switchAccBtn}>
-              <Text style={styles.footerBtnTxt}>Switch Account</Text>
-            </Button>
-            <Button bordered block style={styles.signupBtn}>
-              <Text style={styles.footerBtnTxt}>Signup</Text>
-            </Button>
-          </View>
+const App: FunctionComponent = () => (
+  <>
+    <SafeAreaView>
+      <View style={styles.containerView}>
+        <View style={styles.titleContainer}>
+          <Text style={styles.title}>
+            InstaClone
+          </Text>
         </View>
-      </SafeAreaView>
-    </>
-  );
-};
+        <View style={styles.imageContainer}>
+          <Image source={{ uri: 'https://picsum.photos/200' }} style={styles.profileImage} />
+        </View>
+        <View style={styles.loginBtnContainer}>
+          <Button block style={styles.loginBtn}>
+            <Text style={styles.loginBtnTxt}>Login As Amit Rai</Text>
+          </Button>
+        </View>
+        <View style={styles.removeViewContainer}>
+          <Text style={styles.removeTxt}>Remove</Text>
+        </View>
+        <View style={styles.footerContainer}>
+          <Button bordered block style={styles.switchAccBtn}>
+            <Text style={styles.footerBtnTxt}>Switch Account</Text>
+          </Button>
+          <Button bordered block style={styles.signupBtn}>
+            <Text style={styles.footerBtnTxt}>Signup</Text>
+          </Button>
+        </View>
+      </View>
+    </SafeAreaView>
+  </>
+);
 
 const styles = StyleSheet.create({
   containerView: {
