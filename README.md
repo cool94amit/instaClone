@@ -6,3 +6,4 @@
 - [ ] Integrate redux for data flow
 - [x] Initilize the app development
 - [x] Integrate linting
+- [x] Added Dummy Card and tab icons

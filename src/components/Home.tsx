@@ -3,13 +3,16 @@ import {
     StyleSheet,
     View,
 } from 'react-native';
-import { Text } from 'native-base';
+import { Text, Container, Content } from 'native-base';
+import Card from './shared/Card';
 
 const Home: FunctionComponent = () => {
     return (
-        <View>
-            <Text>Home</Text>
-        </View>
+        <Container>
+            <Content>
+                <Card />
+            </Content>
+        </Container>
     );
 }
 
